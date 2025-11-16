@@ -4,6 +4,7 @@ Edulink, öğretmen, öğrenci ve velilerin bir arada bulunduğu modern bir öde
 Backend .NET 9 (ASP.NET Core Web API) ile, frontend ise React ile geliştirilmiştir.
 
 Sistem; kullanıcı rolleri, ödev ekleme, teslim etme, not verme, velinin çocuklarını takip etmesi gibi birçok özelliği kapsar.
+
 Özellikler
 
 Öğretmen Paneli
