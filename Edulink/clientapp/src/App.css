@@ -1,0 +1,196 @@
+﻿/* 🌈 Genel ayarlar */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* 🔹 Arka Plan - Parlayan Gradient */
+.login-bg {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364, #185a9d, #43cea2);
+    background-size: 500% 500%;
+    animation: bgShift 18s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes bgShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 🔹 Kart & Giriş Alanı */
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 400px;
+    padding: 2.5rem;
+    border-radius: 25px;
+    animation: fadeInUp 0.7s ease;
+}
+
+.modern-glass {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+    .modern-glass:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+    }
+
+/* 🔹 Marka Alanı */
+.brand-section {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.8rem;
+    animation: fadeIn 1s ease;
+}
+
+.brand-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.5));
+}
+
+.brand-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 0 12px rgba(100,200,255,0.7);
+}
+
+.brand-subtitle {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
+}
+
+/* 🔹 Login Başlığı */
+.login-title {
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* 🔹 Input alanları */
+.modern-input {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 15px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+    .modern-input:focus {
+        outline: none;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(66, 150, 255, 0.5);
+    }
+
+/* 🔹 Buton */
+.modern-btn {
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    color: white;
+    font-weight: 600;
+    padding: 12px 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+    .modern-btn:hover {
+        transform: scale(1.05);
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.45);
+    }
+
+/* 🔹 Alt bağlantı */
+.small-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.modern-link {
+    color: #00ffe0;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .modern-link:hover {
+        color: #ffffff;
+        text-shadow: 0 0 8px #00ffe0;
+    }
+
+/* 🔹 Animasyonlar */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* 🔹 Select kutusu (modern stil - kayıt sayfası için) */
+.form-select.modern-input {
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+    .form-select.modern-input:focus {
+        outline: none;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(66, 150, 255, 0.5);
+    }
